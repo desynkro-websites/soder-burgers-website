@@ -587,14 +587,14 @@ body {
 
 .wall-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.9rem;
   margin-top: 1.6rem;
 }
 
 .wall-pic {
   position: relative;
-  aspect-ratio: 1;
+  aspect-ratio: 2 / 3;
   border: 1px solid rgba(52, 245, 255, 0.25);
   border-radius: 8px;
   overflow: hidden;
@@ -609,14 +609,6 @@ body {
   display: block;
 }
 
-.wall-pic::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(0deg, rgba(13, 13, 26, 0.16) 0 1px, transparent 1px 3px);
-  pointer-events: none;
-}
-
 .wall-pic:hover {
   transform: scale(1.03) rotate(-1.2deg);
   border-color: var(--cyan);
@@ -628,15 +620,36 @@ body {
   transform: scale(1.03) rotate(1.2deg);
 }
 
-.gallery-tag {
-  display: block;
-  text-decoration: none;
-  transition: color 0.15s, text-shadow 0.15s;
+.gallery-more {
+  margin-top: 1.8rem;
+  text-align: center;
 }
 
-.gallery-tag:hover {
-  color: var(--cyan);
-  text-shadow: 0 0 12px rgba(52, 245, 255, 0.8);
+.gallery-more .btn svg {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.18em;
+  margin-right: 0.45em;
+}
+
+.neon-tag {
+  color: #ff00ff;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.75), 0 0 22px rgba(255, 0, 255, 0.45);
+}
+
+@media (max-width: 860px) {
+  .wall-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .wall-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -940,11 +953,6 @@ body {
   box-shadow: 0 0 16px rgba(52, 245, 255, 0.4);
 }
 
-.hashtag-line span {
-  color: var(--purple);
-  font-weight: 700;
-  text-shadow: 0 0 12px rgba(185, 103, 255, 0.7);
-}
 
 .location-grid {
   display: grid;
