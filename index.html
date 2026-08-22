@@ -55,25 +55,6 @@
   <main id="top">
     <section class="hero" aria-label="Welcome to Söder Burgers">
       <div class="stars" aria-hidden="true"></div>
-      <svg class="sun" viewBox="0 0 200 200" aria-hidden="true">
-        <defs>
-          <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#ffe95e"/>
-            <stop offset=".45" stop-color="#ff9a3c"/>
-            <stop offset=".78" stop-color="#ff3c6e"/>
-            <stop offset="1" stop-color="#c86bff"/>
-          </linearGradient>
-          <mask id="sunStripes">
-            <rect width="200" height="200" fill="#fff"/>
-            <rect y="112" width="200" height="4" fill="#000"/>
-            <rect y="124" width="200" height="6" fill="#000"/>
-            <rect y="139" width="200" height="8" fill="#000"/>
-            <rect y="157" width="200" height="10" fill="#000"/>
-            <rect y="178" width="200" height="12" fill="#000"/>
-          </mask>
-        </defs>
-        <circle cx="100" cy="100" r="90" fill="url(#sunGrad)" mask="url(#sunStripes)"/>
-      </svg>
       <svg class="ridges" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0 220V150L180 70l160 90 140-110 170 130 150-90 190 120 160-80 150 60 140-40v120Z" fill="#181838"/>
         <path d="M0 220v-40l200-60 180 70 160-50 200 80 180-60 170 50 150-30 200 40v0Z" fill="#101028"/>
@@ -82,9 +63,28 @@
 
       <div class="hero-content">
         <h1 class="hero-logo">
+          <svg class="sun" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffe95e"/>
+                <stop offset=".45" stop-color="#ff9a3c"/>
+                <stop offset=".78" stop-color="#ff3c6e"/>
+                <stop offset="1" stop-color="#c86bff"/>
+              </linearGradient>
+              <mask id="sunStripes">
+                <rect width="200" height="200" fill="#fff"/>
+                <rect y="112" width="200" height="4" fill="#000"/>
+                <rect y="124" width="200" height="6" fill="#000"/>
+                <rect y="139" width="200" height="8" fill="#000"/>
+                <rect y="157" width="200" height="10" fill="#000"/>
+                <rect y="178" width="200" height="12" fill="#000"/>
+              </mask>
+            </defs>
+            <circle cx="100" cy="100" r="90" fill="url(#sunGrad)" mask="url(#sunStripes)"/>
+          </svg>
           <img src="assets/logo.png" alt="Söder Burgers" width="939" height="585">
         </h1>
-        <p class="hero-sub">Old-school burgers, new-school flavour.<br>Lesmurdie &middot; Perth Hills &middot; WA</p>
+        <p class="hero-sub">Lesmurdie &middot; Perth Hills &middot; WA</p>
         <p class="hero-badge">★ VOTED BEST BURGERS IN PERTH ★</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#menu">View the Menu</a>
@@ -238,6 +238,14 @@
               <p>@soder_burgers</p>
             </a>
           </div>
+          <a class="review-cta" href="https://www.google.com/search?kgmid=%2Fg%2F11swpp5kxc&amp;hl=en-AU&amp;q=S%C3%B6der%20Burgers&amp;shem=epsd1%2Cltae%2Crimspwouoe#lrd=0x2a32c17015377e59:0x9c5b8e7553ee0a5c,1,,,,"
+             target="_blank" rel="noopener noreferrer">
+            <span class="review-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </span>
+            <span class="review-copy"><strong>Loved your Söder burger?</strong> Consider giving us 5 stars on Google</span>
+            <span class="review-go">Leave a Review ↗</span>
+          </a>
           <p class="hashtag-line">Tag your feed <span>#soderburgers</span> — best pics end up on our wall.</p>
         </div>
       </div>
