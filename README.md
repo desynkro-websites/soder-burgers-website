@@ -22,7 +22,7 @@ I always open-source my work as a way to give back to the community, thank you t
 
 ```bash
 git clone <repo-url>
-cd soder-burgers
+cd soder-burgers-website
 docker compose up -d
 ```
 
