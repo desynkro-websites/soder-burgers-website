@@ -1,0 +1,7 @@
+# source photos, not for deployment
+originals/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
