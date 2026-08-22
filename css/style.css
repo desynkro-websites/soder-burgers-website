@@ -585,6 +585,60 @@ body {
   grid-auto-rows: 1fr;
 }
 
+.wall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.wall-pic {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid rgba(52, 245, 255, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--panel-deep, #14142b);
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.wall-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wall-pic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(13, 13, 26, 0.16) 0 1px, transparent 1px 3px);
+  pointer-events: none;
+}
+
+.wall-pic:hover {
+  transform: scale(1.03) rotate(-1.2deg);
+  border-color: var(--cyan);
+  box-shadow: 0 0 24px rgba(52, 245, 255, 0.35);
+  z-index: 1;
+}
+
+.wall-pic:nth-child(even):hover {
+  transform: scale(1.03) rotate(1.2deg);
+}
+
+.gallery-tag {
+  display: block;
+  text-decoration: none;
+  transition: color 0.15s, text-shadow 0.15s;
+}
+
+.gallery-tag:hover {
+  color: var(--cyan);
+  text-shadow: 0 0 12px rgba(52, 245, 255, 0.8);
+}
+
 @media (max-width: 640px) {
   .panel-sides {
     grid-template-columns: 1fr;
