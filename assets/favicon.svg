@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd23c"/>
+      <stop offset="1" stop-color="#ff8a3c"/>
+    </linearGradient>
+    <linearGradient id="bgsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12102e"/>
+      <stop offset=".6" stop-color="#2a1149"/>
+      <stop offset="1" stop-color="#4a1650"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#bgsky)"/>
+  <g>
+    <path d="M11 30a21 15 0 0 1 42 0Z" fill="url(#bun)"/>
+    <circle cx="25" cy="22" r="1.8" fill="#fff45e"/>
+    <circle cx="34" cy="18" r="1.8" fill="#fff45e"/>
+    <circle cx="41" cy="24" r="1.8" fill="#fff45e"/>
+    <rect x="8" y="33" width="48" height="6" rx="3" fill="#34f5ff"/>
+    <rect x="11" y="41" width="42" height="7" rx="3.5" fill="#ff3c6e"/>
+    <path d="M12 50h40a20 7 0 0 1-40 0Z" fill="url(#bun)"/>
+  </g>
+</svg>
