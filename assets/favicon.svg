@@ -1,23 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffd23c"/>
-      <stop offset="1" stop-color="#ff8a3c"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="13.25"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <defs
+     id="defs5">
+    <linearGradient
+       id="bun"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#ffd23c"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#ff8a3c"
+         id="stop2" />
     </linearGradient>
-    <linearGradient id="bgsky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#12102e"/>
-      <stop offset=".6" stop-color="#2a1149"/>
-      <stop offset="1" stop-color="#4a1650"/>
+    <linearGradient
+       id="bgsky"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#12102e"
+         id="stop3" />
+      <stop
+         offset=".6"
+         stop-color="#2a1149"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#4a1650"
+         id="stop5" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#bun"
+       id="linearGradient8"
+       x1="6.5737574"
+       y1="25.099801"
+       x2="6.5737574"
+       y2="50.199602"
+       gradientTransform="scale(1.6733201,0.5976143)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#bun"
+       id="linearGradient9"
+       x1="5.0199602"
+       y1="119.52286"
+       x2="5.0199602"
+       y2="136.25606"
+       gradientTransform="scale(2.3904572,0.41833001)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
-  <rect width="64" height="64" rx="12" fill="url(#bgsky)"/>
-  <g>
-    <path d="M11 30a21 15 0 0 1 42 0Z" fill="url(#bun)"/>
-    <circle cx="25" cy="22" r="1.8" fill="#fff45e"/>
-    <circle cx="34" cy="18" r="1.8" fill="#fff45e"/>
-    <circle cx="41" cy="24" r="1.8" fill="#fff45e"/>
-    <rect x="8" y="33" width="48" height="6" rx="3" fill="#34f5ff"/>
-    <rect x="11" y="41" width="42" height="7" rx="3.5" fill="#ff3c6e"/>
-    <path d="M12 50h40a20 7 0 0 1-40 0Z" fill="url(#bun)"/>
+  <rect
+     width="64"
+     height="64"
+     rx="12"
+     fill="url(#bgsky)"
+     id="rect5" />
+  <g
+     id="g8"
+     transform="translate(-0.1509434,-4.3018868)">
+    <path
+       d="m 11,30 a 21,15 0 0 1 42,0 z"
+       fill="url(#bun)"
+       id="path5"
+       style="fill:url(#linearGradient8)" />
+    <circle
+       cx="25"
+       cy="22"
+       r="1.8"
+       fill="#fff45e"
+       id="circle5" />
+    <circle
+       cx="34"
+       cy="18"
+       r="1.8"
+       fill="#fff45e"
+       id="circle6" />
+    <circle
+       cx="41"
+       cy="24"
+       r="1.8"
+       fill="#fff45e"
+       id="circle7" />
+    <rect
+       x="7.9245281"
+       y="32.245281"
+       width="48"
+       height="6"
+       rx="3"
+       fill="#34f5ff"
+       id="rect7" />
+    <rect
+       x="10.924528"
+       y="40.245281"
+       width="42"
+       height="7"
+       rx="3.5"
+       fill="#ff3c6e"
+       id="rect8" />
+    <path
+       d="M 12,50 H 52 A 20,7 0 0 1 12,50 Z"
+       fill="url(#bun)"
+       id="path8"
+       style="fill:url(#linearGradient9)" />
   </g>
 </svg>
