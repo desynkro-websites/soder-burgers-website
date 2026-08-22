@@ -575,12 +575,29 @@ body {
   display: grid;
 }
 
+.panel-sides {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-stack {
+  display: grid;
+  gap: 1.1rem;
+  grid-auto-rows: 1fr;
+}
+
+@media (max-width: 640px) {
+  .panel-sides {
+    grid-template-columns: 1fr;
+  }
+}
+
 .menu-strip {
-  grid-column: 1 / -1;
-  border-top: 1px dashed rgba(154, 154, 184, 0.35);
-  padding-top: 1.1rem;
+  margin-top: 1.5rem;
+  border-block: 1px dashed rgba(154, 154, 184, 0.35);
+  padding: 1rem 0;
   text-align: center;
   font-size: 0.82rem;
+  letter-spacing: 0.06em;
   color: var(--muted);
 }
 
@@ -615,6 +632,26 @@ body {
   font-size: 0.75rem;
   color: var(--muted);
   margin-bottom: 0.6rem;
+}
+
+.card-sublist {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed rgba(154, 154, 184, 0.35);
+}
+
+.card-sublist h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.price-list--tight li {
+  padding: 0.18rem 0;
+  font-size: 0.82rem;
 }
 
 .price-list {
