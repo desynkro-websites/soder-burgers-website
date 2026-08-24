@@ -43,7 +43,7 @@ soder-burgers/
 ├── assets/
 │   ├── favicon.svg
 │   ├── logo.png         # hero logo
-│   ├── menu.png         # printable full menu
+│   ├── menu.jpg         # printable full menu
 │   └── gallery/         # optimised WebP + JPEG photos (<picture> sources)
 └── docker-compose.yml   # nginx:alpine local preview on :8080
 ```
