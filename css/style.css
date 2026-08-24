@@ -644,9 +644,20 @@ body {
 
 @media (max-width: 640px) {
   .wall-grid {
-    grid-template-columns: 1fr;
-    max-width: 420px;
-    margin-inline: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0.8rem;
+    scrollbar-width: none;
+  }
+
+  .wall-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .wall-pic {
+    flex: 0 0 78%;
+    scroll-snap-align: center;
   }
 }
 
