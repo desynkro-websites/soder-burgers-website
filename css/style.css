@@ -646,6 +646,8 @@ body {
   .wall-grid {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 8px;
     scroll-snap-type: x mandatory;
     gap: 0.8rem;
     scrollbar-width: none;
@@ -658,6 +660,44 @@ body {
   .wall-pic {
     flex: 0 0 78%;
     scroll-snap-align: center;
+  }
+}
+
+/* mouse users on narrow desktop windows: slim neon drag bar */
+@media (max-width: 640px) and (hover: hover) and (pointer: fine) {
+  .wall-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #ff00ff rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* blink/webkit: full custom bar with hover state
+   (standard scrollbar-* props disable webkit scrollbar styling, so reset them here) */
+@supports selector(::-webkit-scrollbar) {
+  @media (max-width: 640px) and (hover: hover) and (pointer: fine) {
+    .wall-grid {
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+
+    .wall-grid::-webkit-scrollbar {
+      display: block;
+      height: 8px;
+    }
+
+    .wall-grid::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+    }
+
+    .wall-grid::-webkit-scrollbar-thumb {
+      background: #ff00ff;
+      border-radius: 999px;
+    }
+
+    .wall-grid::-webkit-scrollbar-thumb:hover {
+      background: var(--cyan);
+    }
   }
 }
 
