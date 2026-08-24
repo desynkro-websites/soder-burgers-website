@@ -349,9 +349,11 @@ body {
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
-.hero-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(255, 210, 60, 0.4), inset 0 0 16px rgba(255, 210, 60, 0.14);
+@media (hover: hover) {
+  .hero-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 210, 60, 0.4), inset 0 0 16px rgba(255, 210, 60, 0.14);
+  }
 }
 
 .badge-text {
@@ -412,9 +414,11 @@ body {
   box-shadow: 0 0 20px rgba(255, 60, 110, 0.55);
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 34px rgba(255, 60, 110, 0.9);
+@media (hover: hover) {
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 34px rgba(255, 60, 110, 0.9);
+  }
 }
 
 .btn-ghost {
@@ -422,10 +426,12 @@ body {
   color: var(--cyan);
 }
 
-.btn-ghost:hover {
-  background: rgba(52, 245, 255, 0.12);
-  box-shadow: 0 0 24px rgba(52, 245, 255, 0.4);
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .btn-ghost:hover {
+    background: rgba(52, 245, 255, 0.12);
+    box-shadow: 0 0 24px rgba(52, 245, 255, 0.4);
+    transform: translateY(-2px);
+  }
 }
 
 .btn-email {
@@ -611,15 +617,17 @@ body {
   display: block;
 }
 
-.wall-pic:hover {
-  transform: scale(1.03) rotate(-1.2deg);
-  border-color: var(--cyan);
-  box-shadow: 0 0 24px rgba(52, 245, 255, 0.35);
-  z-index: 1;
-}
+@media (hover: hover) {
+  .wall-pic:hover {
+    transform: scale(1.03) rotate(-1.2deg);
+    border-color: var(--cyan);
+    box-shadow: 0 0 24px rgba(52, 245, 255, 0.35);
+    z-index: 1;
+  }
 
-.wall-pic:nth-child(even):hover {
-  transform: scale(1.03) rotate(1.2deg);
+  .wall-pic:nth-child(even):hover {
+    transform: scale(1.03) rotate(1.2deg);
+  }
 }
 
 .gallery-more {
@@ -836,10 +844,12 @@ body {
   transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
 
-.feedback-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--pink);
-  box-shadow: 0 0 28px rgba(255, 60, 110, 0.25);
+@media (hover: hover) {
+  .feedback-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--pink);
+    box-shadow: 0 0 28px rgba(255, 60, 110, 0.25);
+  }
 }
 
 .feedback-card svg {
@@ -952,8 +962,10 @@ body {
   50% { box-shadow: 0 0 32px rgba(255, 60, 110, 0.45), inset 0 0 24px rgba(255, 210, 60, 0.12); }
 }
 
-.review-cta:hover {
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .review-cta:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .review-stars {
