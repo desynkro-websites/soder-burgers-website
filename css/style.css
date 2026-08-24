@@ -1294,9 +1294,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  min-height: 44px;
-  border: 1px solid var(--cyan);
-  border-radius: 999px;
+  min-height: 40px;
+  border: 1px solid rgba(52, 245, 255, 0.6);
+  border-radius: 7px;
+  background: rgba(13, 13, 26, 0.42);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: var(--cyan);
   text-decoration: none;
   font-weight: 700;
@@ -1311,8 +1314,10 @@ body {
 }
 
 .sticky-btn--primary {
-  background: var(--cyan);
-  color: #0d0d1a;
+  background: var(--pink);
+  border-color: var(--pink);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 60, 110, 0.55);
 }
 
 @supports (animation-timeline: scroll()) {
@@ -1336,12 +1341,14 @@ body {
 @media (max-width: 640px) {
   .sticky-actions {
     display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
     padding-bottom: calc(0.65rem + env(safe-area-inset-bottom));
   }
 
   body {
-    padding-bottom: 70px;
-    padding-bottom: calc(70px + env(safe-area-inset-bottom));
+    padding-bottom: 118px;
+    padding-bottom: calc(118px + env(safe-area-inset-bottom));
   }
 }
 
