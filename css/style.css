@@ -140,6 +140,10 @@ body {
   gap: 0.45rem;
 }
 
+.nav-socials {
+  display: none;
+}
+
 .header-socials a {
   display: grid;
   place-items: center;
@@ -1212,6 +1216,42 @@ body {
 @media (max-width: 480px) {
   .brand-text {
     font-size: 0.88rem;
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  .nav-burger {
+    margin-left: auto;
+  }
+
+  .nav-socials {
+    display: flex;
+    justify-content: center;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .nav-socials a {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 7px;
+    color: var(--muted);
+    border: 1px solid transparent;
+  }
+
+  .nav-socials a:hover {
+    color: var(--cyan);
+    border-color: var(--line);
+  }
+
+  .nav-socials svg {
+    width: 17px;
+    height: 17px;
   }
 
   .btn {
